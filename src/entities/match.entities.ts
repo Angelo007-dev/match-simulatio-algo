@@ -1,6 +1,6 @@
 import { Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
 import { Team } from "./team.entities";
-import { MatchStatus } from "src/constants/constant";
+import { MatchStatus } from "../constants/constant";
 
 @Entity('match')
 export class Match {

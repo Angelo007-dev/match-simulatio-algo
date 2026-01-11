@@ -1,10 +1,10 @@
 import { BadRequestException, Injectable, InternalServerErrorException, NotFoundException } from '@nestjs/common';
 import { InjectDataSource, InjectRepository } from '@nestjs/typeorm';
-import { MatchStatus } from 'src/constants/constant';
-import { MatchCreateDto } from 'src/dto/macth.create.dto';
-import { MatchValidateDto } from 'src/dto/match.validate.dto';
-import { Match } from 'src/entities/match.entities';
-import { Team } from 'src/entities/team.entities';
+import { MatchStatus } from '../../constants/constant';
+import { MatchCreateDto } from '../../dto/macth.create.dto';
+import { MatchValidateDto } from '../../dto/match.validate.dto';
+import { Match } from '../../entities/match.entities';
+import { Team } from '../../entities/team.entities';
 import { DataSource, Repository } from 'typeorm';
 
 @Injectable()
