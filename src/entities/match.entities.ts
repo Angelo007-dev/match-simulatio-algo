@@ -7,10 +7,10 @@ export class Match {
     @PrimaryGeneratedColumn()
     id: number;
 
-    @Column()
+    @Column({ default: 0 })
     home_score: number;
 
-    @Column()
+    @Column({ default: 0 })
     away_score: number;
 
     @Column()

@@ -86,6 +86,8 @@ export class MatchService {
 
             const { home_score, away_score } = match_validate_dto;
 
+            if (home_score < 0 || away_score < 0) throw new BadRequestException('score cannot be negative');
+
             //update match
             match.home_score = home_score;
             match.away_score = away_score;

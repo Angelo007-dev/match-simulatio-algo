@@ -3,10 +3,10 @@ import { MatchStatus } from "src/constants/constant";
 
 export class MatchCreateDto {
     @IsInt()
-    home_score: number;
+    home_score: number = 0;
 
     @IsInt()
-    away_score: number;
+    away_score: number = 0;
 
     @IsInt()
     @IsNotEmpty()
